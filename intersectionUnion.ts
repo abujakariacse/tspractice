@@ -1,12 +1,12 @@
 {
   // union type
 
-  type FrontendDeveloper = "fokiraDeveloper" | "juniorDeveloper";
-  type FullStackDeveloper = "frontendDeveloper" | "expertDeveloper";
+  //   type FrontendDeveloper = "fokiraDeveloper" | "juniorDeveloper";
+  //   type FullStackDeveloper = "frontendDeveloper" | "expertDeveloper";
 
-  type Developer = FrontendDeveloper | FullStackDeveloper;
+  //   type Developer = FrontendDeveloper | FullStackDeveloper;
 
-  const newDeveloper: Developer = "fokiraDeveloper";
+  //   const newDeveloper: Developer = "fokiraDeveloper";
 
   type User = {
     name: string;
@@ -20,5 +20,24 @@
     email: "abujakariacse@gmail.com",
     blood: "AB+",
     gender: "male",
+  };
+
+  //   Intersection type
+  type FrontendDeveloper = {
+    designation1: "Frontend Developer";
+    skills: string[];
+  };
+
+  type BackendDeveloper = {
+    designation2: "Backend Developer";
+    skills: string[];
+  };
+
+  type FullStackDeveloper = FrontendDeveloper & BackendDeveloper;
+
+  const newDev: FullStackDeveloper = {
+    designation1: "Frontend Developer",
+    designation2: "Backend Developer",
+    skills: ["HTML", "CSS", "Express", "Mongo"],
   };
 }
