@@ -21,4 +21,17 @@
     class: "Six",
     company: "Programming Hero",
   };
+
+  type UserName = string;
+  const userName: UserName = "abujakariacse";
+
+  type IsAdmin = boolean;
+  const isAdmin: IsAdmin = true;
+
+  type AccoutNo = number;
+  const accountNo: AccoutNo = 262;
+
+  type AddNum = (num1: number, num2: number)=>number
+
+  const addNum : AddNum= (num1, num2) => num1 + num2;
 }
