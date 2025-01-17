@@ -24,4 +24,10 @@
       console.log("Wrong input");
     }
   };
+
+  //   Never type
+  const throwError = (msg: string): never => {
+    throw new Error(msg);
+  };
+  throwError("Oops! Server down");
 }
