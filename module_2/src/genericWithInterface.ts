@@ -1,6 +1,6 @@
 {
   // generic with interface
-  interface Developer<T, U> {
+  interface Developer<T, U = null> {
     name: string;
     computer: {
       brand: string;
@@ -17,7 +17,7 @@
     price: number;
   }
 
-  const poorDeveloper: Developer<EnvolveWatch, null> = {
+  const poorDeveloper: Developer<EnvolveWatch> = {
     name: "Abu Jakaria",
     computer: {
       brand: "HP",
@@ -62,6 +62,4 @@
       topSpeed: 120,
     },
   };
-
-  console.log(poorDeveloper);
 }
