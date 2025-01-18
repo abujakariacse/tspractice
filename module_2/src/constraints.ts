@@ -15,7 +15,7 @@
     };
   };
 
-  const result = AddStudentToCourse<Student>({
+  const result = AddStudentToCourse({
     name: "Jakaria",
     email: "jakaria@gmail.com",
     id: 68,
