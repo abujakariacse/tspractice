@@ -12,7 +12,19 @@
     width: number;
   };
 
-  type AreaString<T> = {
-    [key in  keyof T] : T[key]
-  }
+  type Height = AreaNumber["height"]; //look up type
+
+  type AreaString = {
+    [key in keyof AreaNumber]: boolean;
+  };
+
+  //   using generic
+  type AreaStringLookup<T> = {
+    [key in keyof T]: T[key];
+  };
+
+  const area1: AreaStringLookup<{ height: string; width: number }> = {
+    height: "10",
+    width: 50,
+  };
 }
