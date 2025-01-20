@@ -4,7 +4,7 @@
   let anything: any;
 
   anything = "Complete web deleveloment";
-  // When we will "as" it will give us the propery of the specific data type
+  // When we will "as" it will give us the property of the specific data type
   // (anything as string)
 
   // type assertion in function

@@ -9,6 +9,8 @@
 
   const isAdmin: GenericArr<boolean> = [true, false, false, true];
 
+  
+
   //   Array of object using generic
 
   const users: GenericArr<{
