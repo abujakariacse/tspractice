@@ -41,4 +41,33 @@
   };
 
   //   userReadonly.name = "Jakaria" // it will throw err
+
+  //   Record type // It makes type dynamic
+  type MyObj = {
+    name: string;
+    email: string;
+  };
+
+  const userObj: MyObj = {
+    // if I use like that it will never allow me to add new property
+    name: "Jack",
+    email: "jack@gmail.com",
+    // address: 'kurigram' // it will throw err
+  };
+
+  type MyNewObj = Record<string, string>; // Here I'm defining key, value types. Here key will be string. Cause we are using object.
+
+  //   Here I can add any prop i want but must follow record type. It will allow make type dynamic
+  const newUserObj: MyNewObj = {
+    name: "Mack",
+    model: "mini",
+    realeaseYear: "2020",
+  };
+
+  //   If we don't know what will be type of value we can use unknown as second value of Record
+
+  const emptyObject: Record<string, unknown> = {};
+  emptyObject.name = "Jakaria";
+  emptyObject.age = 20;
+  emptyObject.isAdmin = true;
 }
