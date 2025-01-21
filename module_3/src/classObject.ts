@@ -1,4 +1,5 @@
 {
+  // OOP
   // Class and Object
   class Animal {
     // name: string;
