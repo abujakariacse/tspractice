@@ -11,7 +11,7 @@
   type User = {
     name: string;
     email: string;
-    blood: "A+" | "AB+" | "O+" | "B+";
+    blood: "A+" | "AB+" | "O+" | "B+"; // string literal
     gender: "male" | "female";
   };
 
